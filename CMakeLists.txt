@@ -140,6 +140,7 @@ endif ()
 find_package(Threads REQUIRED)
 
 # Boost
+set (Boost_NO_BOOST_CMAKE ON)
 find_package( Boost 1.55 COMPONENTS system thread filesystem REQUIRED )
 include_directories( ${Boost_INCLUDE_DIR} )
 
